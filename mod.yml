@@ -1,0 +1,39 @@
+title: Master Form Only
+description: Changes all instances of Sora and Roxas into Master Form. This is not compatible with GoA ROM Edition.
+assets:
+#Lua Script
+- name: scripts/MasterFormOnly.lua
+  method: copy
+  source:
+  - name: MasterFormOnly.lua
+#ARD Editing
+- method: binarc
+  name: ard/hb05.ard #Ansem's Study Cutscenes
+  multi:
+  - name: ard/jp/hb05.ard
+  - name: ard/us/hb05.ard
+  - name: ard/fr/hb05.ard
+  - name: ard/gr/hb05.ard
+  - name: ard/it/hb05.ard
+  - name: ard/sp/hb05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt07.ard #Market Street: Tram Common Cutscenes
+  multi:
+  - name: ard/jp/tt07.ard
+  - name: ard/us/tt07.ard
+  - name: ard/fr/tt07.ard
+  - name: ard/gr/tt07.ard
+  - name: ard/it/tt07.ard
+  - name: ard/sp/tt07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt07evt.yml
+    type: AreaDataScript
