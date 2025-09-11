@@ -1,0 +1,36 @@
+- Title: 19F mu_00 Detection Saber
+  Id: 415
+  ItemId: 44
+  Type: Event
+  World: LandOfDragons
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 8236
+  OverallChestIndex: 0
+  IdText: 415 (0x19F)
+  MapName: mu_00
+  ItemName: Detection Saber
+- Title: 1A0 mu_00 Frontier of Ultima
+  Id: 416
+  ItemId: 45
+  Type: Event
+  World: LandOfDragons
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 8270
+  OverallChestIndex: 0
+  IdText: 416 (0x1A0)
+  MapName: mu_00
+  ItemName: Frontier of Ultima
+- Title: 045 zz_00 Final Form
+  Id: 69
+  ItemId: 29
+  Type: Event
+  World: WorldZz
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 6144
+  OverallChestIndex: 0
+  IdText: 69 (0x45)
+  MapName: zz_00
+  ItemName: Final Form

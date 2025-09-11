@@ -6,6 +6,16 @@ assets:
   method: copy
   source:
   - name: MasterFormOnly.lua
+#Various Stuff
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: trsr #Add Final Form, Detection Saber, and Frontier of Ultima to Event Pop-Ups
+    type: list
+    method: listpatch
+    source:
+    - name: 03system.bin/TrsrList.yml
+      type: trsr
 #ARD Editing
 - method: binarc
   name: ard/hb05.ard #Ansem's Study Cutscenes
