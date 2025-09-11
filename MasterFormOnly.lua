@@ -59,7 +59,6 @@ function _OnFrame()
 	
 	if canExecute == true then
 		if ReadShort(Now+0x00) == 0x0102 and ReadByte(Now+0x08) == 0x34 then --New Game
-			WriteByte(Save+0x1CD9, 0x02) --Enable Square Button actions
 			WriteByte(Save+0x1CE5, 0x04) --Show Form Gauge
 		end
 		if ReadByte(Now+0x00) == 0x02 then --Twilight Town
@@ -67,12 +66,6 @@ function _OnFrame()
 				WriteShort(UCM+0x009C, 0x0323) --Roxas -> Roxas (Dual-Wielded)
 			else
 				WriteShort(UCM+0x009C, 0x0057) --Roxas -> Master Form
-			end
-			if ReadByte(Now+0x08) == 0x89 then --Master Form Keyblade at Axel II
-				WriteShort(Save+0x32F4, 0x002A)
-			end
-			if ReadByte(Now+0x08) == 0x87 then --Master Form Keyblade after Axel II
-				WriteShort(Save+0x32F4, 0x002C)
 			end
 			if ReadByte(Now+0x01) == 0x1C and ReadByte(Now+0x08) == 0x01 and ReadByte(Save+0x1CE5) == 0x05 then
 				WriteByte(Save+0x1CE5, 0x01)
@@ -86,7 +79,6 @@ function _OnFrame()
 			end
 		end
 		if ReadByte(UCM+0x00) == 0x54 then
-			WriteShort(Save+0x32F4, 0x002C) --Roxas (Dual-Wielded) Keyblade to Detection Saber
 			WriteShort(UCM+0x0000, 0x0057) --Sora (Normal) -> Valor Form
 			WriteShort(UCM+0x00D0, 0x0057) --Roxas (Dual-Wielded) -> Valor Form
 			WriteShort(UCM+0x0104, 0x0057) --Sora (KH1 Costume) -> Valor Form
