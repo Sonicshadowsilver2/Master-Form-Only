@@ -94,20 +94,19 @@ function _OnFrame()
 			end
 		end
 		if ReadByte(UCM+0x00) == 0x54 then
-			WriteShort(UCM+0x0000, 0x0057) --Sora (Normal) -> Valor Form
-			WriteShort(UCM+0x00D0, 0x0057) --Roxas (Dual-Wielded) -> Valor Form
-			WriteShort(UCM+0x0104, 0x0057) --Sora (KH1 Costume) -> Valor Form
-			WriteShort(UCM+0x0444, 0x03E8) --Sora (Halloween Town) -> Valor Form (Halloween Town)
-			WriteShort(UCM+0x0478, 0x0958) --Sora (Christmas Town) -> Valor Form (Christmas Town)
-			WriteShort(UCM+0x0680, 0x066D) --Sora (Space Paranoids) -> Valor Form (Space Paranoids)
-			WriteShort(UCM+0x06B4, 0x066E) --Sora (Timeless River) -> Valor Form (Timeless River)
-			WriteString(Obj0+0x0C870,'P_EX100_TRIF\0') --Sora (Blustery Rescue) Model -> Valor Form Model
-			WriteString(Obj0+0x0C890,'P_EX100_TRIF.mset\0') --Sora (Blustery Rescue) MSET -> Valor Form MSET
-			WriteString(Obj0+0x0C8D0,'P_EX100_TRIF\0') --Sora (Hunny Slider) Model -> Valor Form Model
-			WriteString(Obj0+0x0C8F0,'P_EX100_TRIF.mset\0') --Sora (Hunny Slider) MSET -> Valor Form MSET
-			WriteString(Obj0+0x12690,'P_EX100_TRIF\0\0\0\0\0') --Sora (On Carpet) Model -> Valor Form Model
+			WriteShort(UCM+0x0000, 0x0057) --Sora (Normal) -> Master Form
+			WriteShort(UCM+0x00D0, 0x0057) --Roxas (Dual-Wielded) -> Master Form
+			WriteShort(UCM+0x0104, 0x0057) --Sora (KH1 Costume) -> Master Form
+			WriteShort(UCM+0x0444, 0x03E8) --Sora (Halloween Town) -> Master Form (Halloween Town)
+			WriteShort(UCM+0x0478, 0x0958) --Sora (Christmas Town) -> Master Form (Christmas Town)
+			WriteShort(UCM+0x0680, 0x066D) --Sora (Space Paranoids) -> Master Form (Space Paranoids)
+			WriteShort(UCM+0x06B4, 0x066E) --Sora (Timeless River) -> Master Form (Timeless River)
+			WriteString(Obj0+0x0C870,'P_EX100_TRIF\0') --Sora (Blustery Rescue) Model -> Master Form Model
+			WriteString(Obj0+0x0C890,'P_EX100_TRIF.mset\0') --Sora (Blustery Rescue) MSET -> Master Form MSET
+			WriteString(Obj0+0x0C8D0,'P_EX100_TRIF\0') --Sora (Hunny Slider) Model -> Master Form Model
+			WriteString(Obj0+0x0C8F0,'P_EX100_TRIF.mset\0') --Sora (Hunny Slider) MSET -> Master Form MSET
+			WriteString(Obj0+0x12690,'P_EX100_TRIF\0\0\0\0\0') --Sora (On Carpet) Model -> Master Form Model
 			WriteString(Obj0+0x154D0,'F_TT010_SORA.mset\0') --Skateboard (Roxas) MSET -> Skateboard (Sora) MSET
-			WriteString(Obj0+0x22E90,'P_EX100_TRIF\0\0\0') --Sora (Light Cycle) Model -> Valor Form Model
 		end
 	end
 end
