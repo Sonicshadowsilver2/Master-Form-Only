@@ -88,7 +88,7 @@ function _OnFrame()
 				if ReadByte(Save+0x3524) == 0x00 then
 					WriteByte(Save+0x3524, 0x04) --Remain in Master Form
 				end
-				if ReadInt(Drive+0x04) < 0x44160002 and ReadInt(Drive+0x08) > 0x44950000 then
+				if ReadInt(Drive+0x04) < 0x44160002 and ReadInt(Drive+0x08) > 0x44960000 then
 					WriteInt(Drive+0x04, 0x45160000)
 				end
 			end
