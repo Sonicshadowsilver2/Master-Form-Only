@@ -101,10 +101,6 @@ function _OnFrame()
 			WriteShort(UCM+0x0478, 0x0958) --Sora (Christmas Town) -> Master Form (Christmas Town)
 			WriteShort(UCM+0x0680, 0x066D) --Sora (Space Paranoids) -> Master Form (Space Paranoids)
 			WriteShort(UCM+0x06B4, 0x066E) --Sora (Timeless River) -> Master Form (Timeless River)
-			WriteString(Obj0+0x0C870,'P_EX100_TRIF\0') --Sora (Blustery Rescue) Model -> Master Form Model
-			WriteString(Obj0+0x0C890,'P_EX100_TRIF.mset\0') --Sora (Blustery Rescue) MSET -> Master Form MSET
-			WriteString(Obj0+0x0C8D0,'P_EX100_TRIF\0') --Sora (Hunny Slider) Model -> Master Form Model
-			WriteString(Obj0+0x0C8F0,'P_EX100_TRIF.mset\0') --Sora (Hunny Slider) MSET -> Master Form MSET
 			WriteString(Obj0+0x12690,'P_EX100_TRIF\0\0\0\0\0') --Sora (On Carpet) Model -> Master Form Model
 			WriteString(Obj0+0x154D0,'F_TT010_SORA.mset\0') --Skateboard (Roxas) MSET -> Skateboard (Sora) MSET
 		end
