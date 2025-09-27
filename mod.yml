@@ -41,7 +41,7 @@ assets:
     source:
     - name: ard/tt07evt.yml
     type: AreaDataScript
-  - method: binarc
+- method: binarc
   name: ard/tt08.ard #Station Plaza Cutscenes
   multi:
   - name: ard/jp/tt08.ard
